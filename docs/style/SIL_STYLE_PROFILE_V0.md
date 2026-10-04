@@ -20,6 +20,7 @@ This file records style evidence and hypotheses gathered during Issue #2. Conclu
 ### Colour
 - **DECLARED:** Sil prefers more colour than the initial reference rounds generally showed.
 - **DECLARED:** She likes both (a) strong colour in an otherwise clean outfit and (b) one strong colourful piece over a more neutral base.
+- **DECLARED:** A broad set of tested colourful looks were liked; dark palettes can still work, but an outfit may feel too dark even when otherwise appealing.
 - **CONTEXTUAL / OPEN:** She does **not** reject colour-on-colour combinations; lack of spontaneous self-generated combinations may reflect styling-confidence limits rather than dislike.
 - **INFERRED / high confidence:** Moirai should actively propose colour combinations that Sil may not invent herself, while still keeping them explainable and easy to reject/accept.
 - **UNKNOWN:** Preferred palette and saturation families remain to be discovered.
@@ -46,6 +47,26 @@ This file records style evidence and hypotheses gathered during Issue #2. Conclu
 - **DECLARED:** She does not want work outfits to depend on a blazer every day.
 - **DECLARED:** Professional alternatives to blazers are broadly acceptable: colourful/printed blouses, short structured jackets and cardigan/knit-based combinations all tested positively.
 - **INFERRED:** Blazers are a strong tool for professional polish, but should be alternated with other structured or semi-structured layers.
+
+### Jewellery
+- **DECLARED:** Jewellery is acceptable and can be incorporated into outfit recommendations.
+- **DECLARED:** Metal colour rule: silver is preferred; rose gold is acceptable; yellow gold is not wanted.
+- **DECLARED:** Current habitual earrings are a stable asymmetrical set: ear cuff, one X earring and one infinity earring.
+- **DECLARED:** Current habitual necklaces are two fine silver-colour necklaces, one with an infinity motif and one with a small ring/circle motif.
+- **INFERRED / high confidence:** Jewellery is currently used as a stable personal signature more than as a consciously varied styling layer.
+- Operational implication: recommendations should preserve the habitual silver jewellery by default and only suggest changing/adding jewellery when it adds clear value rather than forcing novelty.
+
+### Bags
+- **DECLARED:** Sil currently does not carry a bag in ordinary daily life and tends to keep essentials in pockets.
+- **DECLARED:** Bags currently feel too formal and Sil does not feel confident choosing them.
+- **DECLARED:** Forgetting to pick up a bag is also a practical barrier, not only an aesthetic preference.
+- **INFERRED / high confidence:** “No bag” should not automatically be treated as a style rejection; this is partly a memory/friction problem and partly a styling-confidence problem.
+- **OPEN / PRODUCT OPPORTUNITY:** Moirai should test whether one or two low-friction, non-formal bag types could solve practical carrying needs and add personality without feeling like an obligation.
+
+### Belts
+- **DECLARED:** Belts are currently used mainly when functionally necessary, e.g. to keep trousers from slipping.
+- **DECLARED:** Sil is willing to wear belts when reminded or when they make sense with the outfit.
+- **INFERRED / high confidence:** Belts are a latent styling tool rather than a disliked category; reminders may unlock use without requiring a behaviour change from memory alone.
 
 ### How to escape rigidity
 - **DECLARED:** Sil is open to essentially any mechanism that keeps workwear from becoming rigid, overly classic or overly serious: colour, formal/informal mixing, relaxed silhouettes, less-classic footwear, accessories and distinctive garments.
@@ -126,7 +147,22 @@ Interpretation:
 - **DECLARED:** Sil has no requirement that professionalism come from a blazer; multiple non-blazer formulas are valid.
 - **INFERRED / high confidence:** The work wardrobe should support several parallel outfit grammars rather than one dominant blazer formula.
 
-## 5. Current work-style model
+## 5. Targeted probe round 4 — 2026-10-04
+
+The fourth round tested colour energy and accessories.
+
+### Colour energy
+- **DECLARED:** All six presented looks were liked overall.
+- **DECLARED:** The first, darker look was still liked but felt perhaps too dark.
+- **INFERRED / high confidence:** Sil has broad tolerance for colour strategies; the key optimization is likely not whether colour is allowed, but how much visual energy versus darkness the final outfit carries.
+
+### Accessory reality
+- **DECLARED:** Sil currently repeats the same earrings and necklaces rather than rotating jewellery intentionally.
+- **DECLARED:** Bags are absent from ordinary outfits due to a mix of perceived formality, uncertainty about selection and simply forgetting to carry one.
+- **DECLARED:** Belts are mostly functional today but would be worn as styling elements if surfaced at the right moment.
+- **INFERRED / high confidence:** Accessories are an external-executive-function opportunity: Moirai should remember them on Sil's behalf instead of assuming that lack of use equals lack of taste.
+
+## 6. Current work-style model
 
 ### Stable elements
 1. **DECLARED:** Trouser-first wardrobe.
@@ -139,6 +175,8 @@ Interpretation:
 8. **DECLARED:** Ballet flats and loafers are not preferred work-shoe directions.
 9. **DECLARED:** Colourful blouses, short structured jackets and cardigan/knit combinations are all valid ways to remain professional without a blazer.
 10. **CONTEXTUAL:** More adventurous colour combinations should be proposed as experiments rather than excluded simply because Sil would not spontaneously construct them herself.
+11. **DECLARED:** Silver-toned jewellery is the default; rose gold is acceptable; yellow gold should be excluded.
+12. **INFERRED / high confidence:** Bags and belts should be treated partly as reminder/repertoire problems, not simply preference problems.
 
 ### Working synthesis
 **INFERRED / high confidence:** Sil's work style is best described for now as:
@@ -151,8 +189,9 @@ A more operational version for recommendations:
 
 This phrase is descriptive, not a fashion-label requirement. Moirai should optimise for the characteristics above rather than force outfits into a named style category.
 
-## 6. Important product implication
+## 7. Important product implications
 
+### Preference boundary vs combination-confidence boundary
 **INFERRED / high confidence:** Sil's current inability to spontaneously imagine certain combinations must not be treated as evidence that those combinations are outside her taste.
 
 Therefore Moirai should separate:
@@ -161,26 +200,43 @@ Therefore Moirai should separate:
 
 The second is precisely where the assistant should add value: generate plausible combinations, explain them lightly, and learn from acceptance/rejection.
 
-## 7. Remaining unknowns to test
+### Preference vs remembering
+**INFERRED / high confidence:** Moirai must also separate:
+- **I do not like/use this category**, from
+- **I forget this category exists while dressing**.
+
+Bags, belts and jewellery variation are current examples. The assistant should be allowed to surface a relevant accessory as a small reminder inside an outfit recommendation rather than infer that infrequent use means rejection.
+
+### Outfit completeness
+**INFERRED / high confidence:** For Sil, a useful recommendation should be able to output more than garments + shoes. When contextually valuable it should include a lightweight “finish the look” layer such as:
+- belt;
+- jewellery variation while respecting metal rules;
+- bag/carrying solution;
+- optional layer.
+
+These should remain optional and low-friction, not turn every outfit into an over-styled checklist.
+
+## 8. Remaining unknowns to test
 
 1. **UNKNOWN:** Preferred colour palette: jewel / bright / warm / cool / pastel / mixed.
 2. **UNKNOWN:** Tolerance and preferences for prints/patterns.
 3. **UNKNOWN:** Best additional everyday non-sneaker work shoe after excluding ballet flats and loafers.
-4. **UNKNOWN:** Preferred jewellery/accessory intensity.
+4. **UNKNOWN:** Whether Sil wants meaningful jewellery variety beyond her current signature set or mainly wants occasional suggestions.
 5. **UNKNOWN:** Shirt/blouse/tee/knit preferences under jackets and blazers.
 6. **UNKNOWN:** Preferred degree of trendiness versus timelessness.
 7. **UNKNOWN:** Casual/weekend style; workwear findings must not be silently generalized to all contexts.
 8. **UNKNOWN:** Speaking/conference and dinner/event variants of the work identity.
-9. **UNKNOWN:** Bag preferences and role in adding personality.
+9. **UNKNOWN:** Which bag/carrying form, if any, can solve the practical need without feeling formal or easy to forget.
+10. **UNKNOWN:** Whether accessory reminders should be default-on or only appear when they materially improve an outfit.
 
-## 8. Next experiment
+## 9. Next experiment
 
-The next discovery round should prioritise **accessories + colour personality**, not another broad workwear gallery.
+The workwear style profile is now stable enough to stop broad discovery galleries temporarily.
 
-Recommended sequence:
-1. distinguish types of colour energy (jewel/bright/pastel/deep/mixed) using otherwise familiar silhouettes;
-2. test jewellery, bags, belts and scarves as personality carriers;
-3. test alternative everyday work shoes other than ballet flats and loafers;
-4. only after those, create an initial set of work outfit rules and evaluation scenarios.
+Recommended next sequence:
+1. move to **casual/weekend style** so workwear findings are not generalized across life contexts;
+2. later test **conference/speaking** and **dinner/event** variants;
+3. defer shopping decisions about bags, shoes or accessories until the wardrobe inventory shows what Sil already owns;
+4. after contextual style discovery, create initial outfit rules and evaluation scenarios.
 
 Avoid wide-leg trousers, high-waisted trousers, straight-leg trousers, skirts and dresses unless deliberately used as negative controls.
