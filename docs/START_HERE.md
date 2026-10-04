@@ -1,8 +1,8 @@
 # Moirai — START HERE
 
-**Status:** discovery / product definition / reuse audit  
+**Status:** reuse decision closed / style discovery next  
 **Authority:** this document points to the current project baseline.  
-**Current objective:** determine the smallest reliable system that can act as a personal wardrobe advisor without prematurely building a bespoke platform.
+**Current objective:** validate Wardrowbe as the operational wardrobe substrate while defining the explicit personal style authority that the Moirai reasoning layer will use.
 
 ## 1. Problem to solve
 
@@ -25,10 +25,10 @@ Its useful core is:
 
 **visual inventory + structured garment data + personal style profile + contextual reasoning + feedback/history.**
 
-The working architectural hypothesis is a hybrid:
+The accepted architecture is a hybrid:
 
-1. **Wardrobe system / visual UI** for photos, inventory, edits, browsing, outfits and history.
-2. **Stylist agent / reasoning layer** for contextual requests such as:
+1. **Wardrowbe** as wardrobe system / visual UI / operational system of record for photos, inventory, edits, outfits, history and feedback.
+2. **Moirai stylist layer** for rich contextual reasoning such as:
    - “What should I wear today?”
    - “I want to wear these trousers; what do I combine them with?”
    - “I have this work event and dinner afterwards.”
@@ -36,29 +36,37 @@ The working architectural hypothesis is a hybrid:
    - “Should I buy this jacket?”
    - “Audit my wardrobe and tell me what no longer earns its place.”
 
-An agent is therefore not assumed to be the database or primary wardrobe UI.
+An agent is not the database or primary wardrobe UI.
 
 ## 3. Current decisions
 
-1. **Reuse before build.** We will audit open-source alternatives before creating bespoke software.
-2. **Wardrowbe is the first base candidate to audit.** It is not yet adopted.
-3. **AI Closet is an architectural reference**, especially for real-item IDs, structured output, validation, history and feedback.
-4. **Libre Closet is a UX/reference candidate**, particularly for wardrobe capture and visual interaction.
-5. **Hermes Agent is not the starting point.** It may become a future runtime for the stylist/reasoning layer if needed.
-6. **No RAG/vector database/multi-agent system by default.** Most wardrobe facts are naturally structured data.
-7. **Photos and structured text are complementary, not alternatives.** Photos remain the visual source; structured metadata supports reasoning and filtering.
-8. **Do not clean the wardrobe before defining the target style.** Items must be evaluated against an intended future wardrobe, not against an undefined aesthetic.
-9. **Do not inventory the entire wardrobe before validating the recommendation loop.** Start with a representative pilot.
-10. **Recommendations must refer to real items.** The system must not hallucinate garments as if they were owned.
-11. **Free/open-source/self-hosted options are preferred.** Paid wardrobe/styling SaaS is out of scope unless later explicitly reconsidered.
+1. **Reuse before build.** Accepted and executed.
+2. **Wardrowbe audit verdict: GO — deploy + configure upstream; no fork.** See `audits/WARDROWBE_FIT_GAP_AUDIT_V1_20261004.md`.
+3. **Wardrowbe is the initial wardrobe substrate and system of record.**
+4. **Do not fork Wardrowbe before a measured blocker.** Prefer configuration, external-agent logic, a small Moirai sidecar or an upstream contribution.
+5. **AI Closet remains an architectural reference**, especially for real-item IDs, structured output, validation, history and feedback.
+6. **Libre Closet remains a UX/reference candidate**, particularly for wardrobe capture and visual interaction.
+7. **Hermes Agent is not required.** It remains a future runtime option only if it solves a measured need.
+8. **A Wardrowbe MCP bridge is a reuse candidate, not yet infrastructure authority.** Audit/smoke-test it before adoption; direct REST remains available.
+9. **No RAG/vector database/multi-agent system by default.** Most wardrobe facts are naturally structured data.
+10. **Photos and structured text are complementary, not alternatives.** Photos remain the visual source; structured metadata supports reasoning and filtering.
+11. **Do not clean the wardrobe before defining the target style.** Items must be evaluated against an intended future wardrobe, not against an undefined aesthetic.
+12. **Do not inventory the entire wardrobe before validating the recommendation loop.** Start with a representative pilot of roughly 15–25 items.
+13. **Recommendations must refer to real items.** Wardrowbe’s external authoring boundary validates real owned UUIDs.
+14. **Free/open-source/self-hosted options are preferred.** Paid wardrobe/styling SaaS is out of scope unless later explicitly reconsidered.
+15. **Pin upstream versions during validation.** Current audited candidate: Wardrowbe `v1.10.3` / `f9664a693eaaf65daa2a09ddedc57956c206eaa2`.
+
+Full decision record: `DECISIONS_V0.md`.
 
 ## 4. Resources already available
 
 The project should exploit already-available model capacity before adding new subscriptions.
 
-The user currently has a **Snapbuilder subscription** with several model options and different usage limits, including a reported 4.6-class model, a limited video-use pool and **Gemma 4 with unlimited usage**, plus other previously available models. Exact provider/model names and quotas should be captured only when they become operationally relevant rather than guessed from memory.
+The user currently has a **Snapbuilder subscription** with several model options and different usage limits, including a reported 4.6-class model, a limited video-use pool and **Gemma 4 with unlimited usage**, plus other previously available models. Exact provider/model names, quotas and API compatibility should be captured only when they become operationally relevant rather than guessed from memory.
 
 The wardrobe is expected to be relatively small: the user anticipates **well under 99 photographed items**, so image ingestion should be operationally manageable and should not drive us toward unnecessary batch/enterprise architecture.
+
+Wardrowbe can use an OpenAI-compatible AI endpoint internally, but Moirai is not required to couple its reasoning layer to that interface: internal vision/text capabilities can be disabled and delegated to an external agent.
 
 ## 5. What “good” looks like
 
@@ -78,16 +86,60 @@ Moirai should eventually be able to:
 - evaluate a potential purchase against the existing wardrobe before buying;
 - explain the recommendation in understandable terms.
 
-## 6. Immediate next step
+## 6. Closed frontier — Wardrowbe audit
 
-Perform a **Wardrowbe fit/gap/reuse audit** against the requirements in `PRODUCT_VISION_V0.md`.
+The first reuse audit is complete.
 
-The required decision output is:
+Authority:
 
-- **FIT** — already solves it sufficiently;
-- **REUSE** — useful component/pattern without major change;
-- **MODIFY** — viable with contained extension;
-- **BUILD** — genuinely missing and worth implementing;
-- **DROP** — feature or complexity we do not need.
+`docs/audits/WARDROWBE_FIT_GAP_AUDIT_V1_20261004.md`
 
-Only after that audit should we decide whether to deploy Wardrowbe vanilla, fork it, wrap it, reuse components, or build a smaller alternative.
+Decision:
+
+> **GO — deploy + configure Wardrowbe upstream; no fork.**
+
+Key reasons:
+
+- strong item/photo/outfit/history/feedback model;
+- stable UUID item identity;
+- built-in learning signals;
+- OpenAI-compatible internal AI but optional AI capabilities;
+- explicit external tagging and external outfit authoring;
+- self-hosted PostgreSQL and image storage;
+- MIT licence;
+- active current maintenance;
+- agent/MCP integration is an intended upstream use case rather than a hack.
+
+## 7. Immediate next step
+
+Create **`SIL_STYLE_PROFILE_V0`** before wardrobe cleanup and before judging recommendation quality.
+
+The profile should establish, at minimum:
+
+- desired everyday identity / impression;
+- work style and levels of formality;
+- speaking/event style;
+- leisure/travel style;
+- comfort constraints;
+- preferred and rejected silhouettes;
+- preferred/avoided colours and combinations;
+- footwear reality;
+- jewellery/accessory habits;
+- “never wear” rules;
+- tolerance for trends vs stable style;
+- desired effort/time to get dressed;
+- reference looks and anti-reference looks;
+- uncertainty areas that should be learned from actual use rather than declared upfront.
+
+Only after this authority exists should the pilot wardrobe be ingested and recommendations evaluated as “technically valid” vs “actually Silvia”.
+
+## 8. Next validation sequence
+
+1. `SIL_STYLE_PROFILE_V0`.
+2. Focused audit/smoke test of candidate Wardrowbe MCP bridge.
+3. Deploy pinned Wardrowbe candidate.
+4. Ingest representative 15–25-item wardrobe.
+5. Test native recommendations and item-first styling.
+6. Capture acceptance/rejection and identify measured gaps.
+7. Add the external Moirai stylist only where it materially improves results.
+8. Expand to full wardrobe only after the recommendation loop passes.
