@@ -19,7 +19,10 @@ This file records style evidence and hypotheses gathered during Issue #2. Conclu
 
 ### Colour
 - **DECLARED:** Sil prefers more colour than the initial reference rounds generally showed.
-- **INFERRED:** Colour is likely to be one of the main tools for breaking workwear rigidity, but the preferred palette and saturation remain to be discovered.
+- **DECLARED:** She likes both (a) strong colour in an otherwise clean outfit and (b) one strong colourful piece over a more neutral base.
+- **CONTEXTUAL / OPEN:** She does **not** reject colour-on-colour combinations; lack of spontaneous self-generated combinations may reflect styling-confidence limits rather than dislike.
+- **INFERRED / high confidence:** Moirai should actively propose colour combinations that Sil may not invent herself, while still keeping them explainable and easy to reject/accept.
+- **UNKNOWN:** Preferred palette and saturation families remain to be discovered.
 
 ### Trousers
 - **DECLARED:** Current work rotation includes dress trousers, skinny/slim trousers, chinos and jeans.
@@ -30,16 +33,18 @@ This file records style evidence and hypotheses gathered during Issue #2. Conclu
 
 ### Footwear
 - **DECLARED:** Ballet flats are disliked.
+- **DECLARED:** Loafers do not appeal and currently read as too masculine for Sil.
 - **DECLARED:** Common day-to-day footwear includes ankle boots and sandals.
 - **DECLARED:** Modern smart sneakers are welcome for work, but not as the automatic footwear choice.
 - **DECLARED:** For dinners or more formal contexts, heeled ankle boots and heeled shoes are viable.
 - **DECLARED:** Sil suspects her everyday work wardrobe may benefit from adding at least one additional non-sneaker shoe option.
-- **UNKNOWN:** The best additional everyday work shoe category still needs discovery; do not assume ballet flats.
+- **UNKNOWN:** The best additional everyday work shoe category still needs discovery; do not assume ballet flats or loafers.
 
 ### Blazers / structure
 - **DECLARED:** Sil likes blazers and considers them part of her style.
 - **DECLARED:** Less rigid blazers are preferred.
 - **DECLARED:** She does not want work outfits to depend on a blazer every day.
+- **DECLARED:** Professional alternatives to blazers are broadly acceptable: colourful/printed blouses, short structured jackets and cardigan/knit-based combinations all tested positively.
 - **INFERRED:** Blazers are a strong tool for professional polish, but should be alternated with other structured or semi-structured layers.
 
 ### How to escape rigidity
@@ -88,7 +93,40 @@ Additional feedback:
 - **DECLARED:** The examples overused sneakers; Sil wants them available but not dominant.
 - **DECLARED:** More colour is desired.
 
-## 4. Current work-style model
+## 4. Targeted probe round 3 — 2026-10-04
+
+The third round isolated three questions: colour use, non-sneaker footwear, and professional alternatives to blazers.
+
+### A. Colour
+- **P3-A1 — strong colour in a clean outfit:** YES.
+- **P3-A2 — colour-on-colour / more adventurous:** NOT REJECTED; Sil explicitly noted that she may simply not imagine these combinations herself because she does not know how to combine them.
+- **P3-A3 — one strong colourful piece + neutral base:** YES.
+
+Interpretation:
+- **DECLARED:** A1 and A3 are comfortable routes.
+- **CONTEXTUAL:** A2 should remain available as a guided/exploratory recommendation mode, not be classified as outside Sil's style.
+- **INFERRED / high confidence:** One key value of Moirai is generative combination support: it should propose combinations beyond Sil's spontaneous styling vocabulary without assuming that unfamiliar equals unwanted.
+
+### B. Footwear
+- **P3-B4 — loafer:** NO / low appeal; perceived as too masculine.
+- **P3-B5 — ankle boot:** YES.
+- **P3-B6 — polished sandal:** YES.
+
+Interpretation:
+- **DECLARED:** Ankle boots and sandals are validated workwear footwear categories.
+- **DECLARED:** Loafers are not currently a target gap-filler.
+- **UNKNOWN:** The additional everyday work shoe gap remains open and requires a different candidate set.
+
+### C. Professional without blazer
+- **P3-C7 — colourful/printed blouse + trousers:** YES.
+- **P3-C8 — short structured non-blazer jacket:** YES.
+- **P3-C9 — cardigan/knit + shirt + slim trousers:** YES.
+
+Interpretation:
+- **DECLARED:** Sil has no requirement that professionalism come from a blazer; multiple non-blazer formulas are valid.
+- **INFERRED / high confidence:** The work wardrobe should support several parallel outfit grammars rather than one dominant blazer formula.
+
+## 5. Current work-style model
 
 ### Stable elements
 1. **DECLARED:** Trouser-first wardrobe.
@@ -98,34 +136,51 @@ Additional feedback:
 5. **DECLARED:** Footwear should rotate: smart sneaker, ankle boot, sandal and context-appropriate heeled options are all valid.
 6. **DECLARED:** Sil actively rejects wide-leg, high-waisted and straight-leg trousers, despite their prevalence in current fashion references.
 7. **DECLARED:** The four principal failure modes for workwear are: too serious, too classic, too plain, too dressed-up.
+8. **DECLARED:** Ballet flats and loafers are not preferred work-shoe directions.
+9. **DECLARED:** Colourful blouses, short structured jackets and cardigan/knit combinations are all valid ways to remain professional without a blazer.
+10. **CONTEXTUAL:** More adventurous colour combinations should be proposed as experiments rather than excluded simply because Sil would not spontaneously construct them herself.
 
 ### Working synthesis
 **INFERRED / high confidence:** Sil's work style is best described for now as:
 
 > **colorful relaxed professional** — trouser-based, polished but not rigid, using colour, mixed formality, relaxed tailoring, varied footwear, accessories or a distinctive piece to keep the result current and personal.
 
+A more operational version for recommendations:
+
+> **Professional enough to clearly read as workwear, but deliberately de-serioused through colour, mixed formality, softer structure, varied footwear and/or one distinctive element. Avoid classic/sober/overdressed “older serious lady” cues.**
+
 This phrase is descriptive, not a fashion-label requirement. Moirai should optimise for the characteristics above rather than force outfits into a named style category.
 
-## 5. Remaining unknowns to test
+## 6. Important product implication
+
+**INFERRED / high confidence:** Sil's current inability to spontaneously imagine certain combinations must not be treated as evidence that those combinations are outside her taste.
+
+Therefore Moirai should separate:
+- **preference boundary** — “I do not like/wear this”; from
+- **combination confidence boundary** — “I would not think of combining this myself.”
+
+The second is precisely where the assistant should add value: generate plausible combinations, explain them lightly, and learn from acceptance/rejection.
+
+## 7. Remaining unknowns to test
 
 1. **UNKNOWN:** Preferred colour palette: jewel / bright / warm / cool / pastel / mixed.
-2. **UNKNOWN:** Whether Sil prefers one colourful statement piece or multiple colours within the same outfit.
-3. **UNKNOWN:** Tolerance and preferences for prints/patterns.
-4. **UNKNOWN:** Preferred alternatives to blazers: cardigan, structured knit, overshirt, short jacket, other.
-5. **UNKNOWN:** Best additional everyday non-sneaker work shoe.
-6. **UNKNOWN:** Preferred jewellery/accessory intensity.
-7. **UNKNOWN:** Shirt/blouse/tee/knit preferences under jackets and blazers.
-8. **UNKNOWN:** Preferred degree of trendiness versus timelessness.
-9. **UNKNOWN:** Casual/weekend style; workwear findings must not be silently generalized to all contexts.
-10. **UNKNOWN:** Speaking/conference and dinner/event variants of the work identity.
+2. **UNKNOWN:** Tolerance and preferences for prints/patterns.
+3. **UNKNOWN:** Best additional everyday non-sneaker work shoe after excluding ballet flats and loafers.
+4. **UNKNOWN:** Preferred jewellery/accessory intensity.
+5. **UNKNOWN:** Shirt/blouse/tee/knit preferences under jackets and blazers.
+6. **UNKNOWN:** Preferred degree of trendiness versus timelessness.
+7. **UNKNOWN:** Casual/weekend style; workwear findings must not be silently generalized to all contexts.
+8. **UNKNOWN:** Speaking/conference and dinner/event variants of the work identity.
+9. **UNKNOWN:** Bag preferences and role in adding personality.
 
-## 6. Next experiment
+## 8. Next experiment
 
-Do not continue with broad generic workwear galleries. The next discovery should be more targeted and should prioritise:
+The next discovery round should prioritise **accessories + colour personality**, not another broad workwear gallery.
 
-1. **colour** — identify which kinds of colour combinations actually feel like Sil;
-2. **non-sneaker work shoes** — identify viable additions without introducing ballet flats;
-3. **tops and layers** — determine what works under/without blazers;
-4. **accessories** — determine whether personality is also carried through bags, jewellery, belts or scarves.
+Recommended sequence:
+1. distinguish types of colour energy (jewel/bright/pastel/deep/mixed) using otherwise familiar silhouettes;
+2. test jewellery, bags, belts and scarves as personality carriers;
+3. test alternative everyday work shoes other than ballet flats and loafers;
+4. only after those, create an initial set of work outfit rules and evaluation scenarios.
 
-The next visual probe should avoid wide-leg trousers, high-waisted trousers, straight-leg trousers, skirts and dresses unless used deliberately as negative controls.
+Avoid wide-leg trousers, high-waisted trousers, straight-leg trousers, skirts and dresses unless deliberately used as negative controls.
