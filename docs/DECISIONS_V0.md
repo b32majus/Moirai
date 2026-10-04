@@ -255,11 +255,9 @@ The architectural boundary is now accepted rather than provisional:
 
 ---
 
-## D-019 — Existing MCP bridge is a candidate, not yet a dependency
+## D-019 — MCP bridge selection remains evidence-based
 
-`mcp-wardrowbe` and related Wardrowbe MCP patterns show that the agent bridge can be reused rather than invented from scratch.
-
-However, the bridge must pass a focused audit/smoke test before becoming infrastructure authority. Direct Wardrowbe REST access remains the fallback and prevents adapter lock-in.
+The MCP bridge is useful only if it preserves Wardrowbe’s real data semantics and does not create a parallel wardrobe model. Direct Wardrowbe REST access remains an acceptable escape hatch for endpoints that are not correctly represented by the bridge.
 
 **Status:** accepted.
 
@@ -274,3 +272,88 @@ Initial audited candidate is Wardrowbe `v1.10.3` / commit `f9664a693eaaf65daa2a0
 Back up PostgreSQL and image storage independently of the application.
 
 **Status:** accepted.
+
+---
+
+## D-021 — Use `jansitarski/wardrowbe-mcp` as the pilot bridge
+
+Focused bridge audit verdict:
+
+> **REUSE WITH THIN EXTERNAL-AUTHORING ADAPTER.**
+
+For the pilot, prefer:
+
+`jansitarski/wardrowbe-mcp@f2f172d6ae309c9ec9478ee75444642ffe611baa`
+
+Why:
+
+- 35-tool Wardrowbe surface;
+- item browsing/search and analytics;
+- garment image access for multimodal reasoning;
+- external-tagging queue and `skip_ai` flow;
+- structured tag/description write-back;
+- item creation;
+- wear/wash/archive lifecycle;
+- outfit history and feedback;
+- Streamable HTTP / stdio;
+- MIT license;
+- real Wardrowbe IDs rather than a parallel identity layer.
+
+Evidence: `docs/audits/WARDROWBE_MCP_BRIDGE_AUDIT_V1_20261004.md`.
+
+**Status:** accepted for pilot.
+
+---
+
+## D-022 — Moirai recommendations must use Wardrowbe external-authoring semantics
+
+Do **not** persist Moirai-generated recommendations through the MCP bridge’s current `wardrowbe_create_outfit` / Wardrowbe `/outfits/studio` path.
+
+Wardrowbe Studio creation is manual-authoring semantics and creates synthetic accepted feedback, which would contaminate learning if used for recommendations that Sil has not yet accepted.
+
+Moirai-authored recommendations must instead use Wardrowbe’s dedicated external-authoring endpoints:
+
+- `POST /api/v1/outfits/suggestions`;
+- `POST /api/v1/pairings/item/{source_item_id}`.
+
+These preserve:
+
+- `source=external`;
+- pending recommendation status;
+- real ordered item UUIDs;
+- optional reasoning/style/formality/palette metadata;
+- clean subsequent user feedback.
+
+Implement this as the smallest practical adapter: two MCP tools, a thin sidecar, an upstream contribution, or direct REST. Do not fork Wardrowbe for it.
+
+**Status:** accepted.
+
+---
+
+## D-023 — Style authority V0 is sufficient for the real-wardrobe pilot
+
+`SIL_STYLE_PROFILE_V0` and `STYLE_EVALUATION_SCENARIOS_V0` are sufficiently explicit to begin testing against real garments.
+
+The profile is not assumed complete. Remaining uncertainty should now be learned preferentially from real recommendations and wear feedback rather than additional generic image questionnaires.
+
+A key calibration remains open: the overlap between casual and work may reflect genuine shared style, convenience/habit, or both. During the pilot Moirai should compare a habitual-baseline outfit with a recognisably-Sil alternative one step higher in polish rather than pre-judging the answer.
+
+**Status:** accepted for V0 pilot.
+
+---
+
+## D-024 — Private wardrobe assets do not belong in the public Moirai repo
+
+`b32majus/Moirai` is currently public.
+
+Do not commit:
+
+- personal wardrobe photographs;
+- private wardrobe database exports;
+- personal body/reference photographs;
+- secrets, tokens or `.env` values;
+- other private wardrobe/user data.
+
+Wardrowbe database/image storage must live in private persistent storage under the user’s control. The public repository may contain architecture, non-secret configuration templates and product documentation only.
+
+**Status:** accepted / mandatory guardrail.
