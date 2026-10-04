@@ -1,6 +1,6 @@
 # SIL_STYLE_PROFILE_V0
 
-**Status:** active discovery — provisional, increasingly stable for workwear.
+**Status:** active discovery — provisional, increasingly stable for workwear and casual/work overlap.
 
 This file records style evidence and hypotheses gathered during Issue #2. Conclusions must be marked as **DECLARED**, **INFERRED**, **UNKNOWN**, or **CONTEXTUAL**. Do not silently promote an inference to fact.
 
@@ -162,7 +162,26 @@ The fourth round tested colour energy and accessories.
 - **DECLARED:** Belts are mostly functional today but would be worn as styling elements if surfaced at the right moment.
 - **INFERRED / high confidence:** Accessories are an external-executive-function opportunity: Moirai should remember them on Sil's behalf instead of assuming that lack of use equals lack of taste.
 
-## 6. Current work-style model
+## 6. Casual/work overlap probe — 2026-10-04
+
+Six casual/weekend references were presented to test whether Sil's off-work style diverges materially from her work style.
+
+- **DECLARED:** All six looks were strongly liked.
+- **DECLARED:** Looks 2, 4, 5 and 6 were explicitly considered suitable for work as well.
+- **INFERRED / high confidence:** Sil's work and casual style are not separate wardrobes with different identities. They share a common base language and differ mainly by degree of polish, structure and context.
+- **INFERRED / high confidence:** Moirai should model formality as a **continuum**, not as a binary work/casual switch.
+- **INFERRED / high confidence:** A useful capsule can therefore contain garments that legitimately serve both work and off-work contexts, reducing unnecessary duplication.
+
+### Emerging shared style language
+Across work and casual references, the repeated positive pattern is:
+- trousers/jeans/chinos rather than skirts/dresses;
+- visible colour or a distinctive piece;
+- relaxed structure rather than rigid tailoring;
+- ankle boots, sandals or modern sneakers according to context;
+- cardigans, colourful knits, blouses, short jackets and relaxed blazers;
+- professional polish achieved by combination rather than by defaulting to formal garments.
+
+## 7. Current style model
 
 ### Stable elements
 1. **DECLARED:** Trouser-first wardrobe.
@@ -177,19 +196,22 @@ The fourth round tested colour energy and accessories.
 10. **CONTEXTUAL:** More adventurous colour combinations should be proposed as experiments rather than excluded simply because Sil would not spontaneously construct them herself.
 11. **DECLARED:** Silver-toned jewellery is the default; rose gold is acceptable; yellow gold should be excluded.
 12. **INFERRED / high confidence:** Bags and belts should be treated partly as reminder/repertoire problems, not simply preference problems.
+13. **INFERRED / high confidence:** Work and casual share the same core aesthetic; context should tune polish rather than switch to a different identity.
 
 ### Working synthesis
-**INFERRED / high confidence:** Sil's work style is best described for now as:
+**INFERRED / high confidence:** Sil's style is best described for now as:
 
-> **colorful relaxed professional** — trouser-based, polished but not rigid, using colour, mixed formality, relaxed tailoring, varied footwear, accessories or a distinctive piece to keep the result current and personal.
+> **colorful relaxed polished** — trouser-based, current and practical, using colour, mixed formality, soft structure, varied footwear and occasional distinctive accessories; professional when needed without becoming rigid, classic or overdone.
 
-A more operational version for recommendations:
+For work, the operational variant is:
 
 > **Professional enough to clearly read as workwear, but deliberately de-serioused through colour, mixed formality, softer structure, varied footwear and/or one distinctive element. Avoid classic/sober/overdressed “older serious lady” cues.**
 
-This phrase is descriptive, not a fashion-label requirement. Moirai should optimise for the characteristics above rather than force outfits into a named style category.
+For casual use, the same language can simply reduce structure and formality rather than changing aesthetic direction entirely.
 
-## 7. Important product implications
+This is descriptive, not a fashion-label requirement. Moirai should optimise for the characteristics above rather than force outfits into a named style category.
+
+## 8. Important product implications
 
 ### Preference boundary vs combination-confidence boundary
 **INFERRED / high confidence:** Sil's current inability to spontaneously imagine certain combinations must not be treated as evidence that those combinations are outside her taste.
@@ -216,27 +238,37 @@ Bags, belts and jewellery variation are current examples. The assistant should b
 
 These should remain optional and low-friction, not turn every outfit into an over-styled checklist.
 
-## 8. Remaining unknowns to test
+### Context as a formality dial
+**INFERRED / high confidence:** Moirai should not classify garments rigidly into “work” and “casual” wardrobes when Sil herself accepts the same look in both contexts. Context should act as a formality/polish dial across a shared wardrobe.
+
+Examples of adjustment dimensions:
+- jeans/chinos ↔ tailored trousers;
+- sneaker ↔ ankle boot/sandal/heel;
+- knit/cardigan ↔ short jacket/relaxed blazer;
+- simple top ↔ blouse or more polished top;
+- no accessory reminder ↔ belt/jewellery/carrying solution when useful.
+
+## 9. Remaining unknowns to test
 
 1. **UNKNOWN:** Preferred colour palette: jewel / bright / warm / cool / pastel / mixed.
 2. **UNKNOWN:** Tolerance and preferences for prints/patterns.
 3. **UNKNOWN:** Best additional everyday non-sneaker work shoe after excluding ballet flats and loafers.
 4. **UNKNOWN:** Whether Sil wants meaningful jewellery variety beyond her current signature set or mainly wants occasional suggestions.
-5. **UNKNOWN:** Shirt/blouse/tee/knit preferences under jackets and blazers.
+5. **UNKNOWN:** Shirt/blouse/tee/knit preferences under jackets and blazers beyond the broad positive signal already observed.
 6. **UNKNOWN:** Preferred degree of trendiness versus timelessness.
-7. **UNKNOWN:** Casual/weekend style; workwear findings must not be silently generalized to all contexts.
-8. **UNKNOWN:** Speaking/conference and dinner/event variants of the work identity.
-9. **UNKNOWN:** Which bag/carrying form, if any, can solve the practical need without feeling formal or easy to forget.
-10. **UNKNOWN:** Whether accessory reminders should be default-on or only appear when they materially improve an outfit.
+7. **UNKNOWN:** Speaking/conference and dinner/event variants of the shared style identity.
+8. **UNKNOWN:** Which bag/carrying form, if any, can solve the practical need without feeling formal or easy to forget.
+9. **UNKNOWN:** Whether accessory reminders should be default-on or only appear when they materially improve an outfit.
+10. **UNKNOWN:** How far the work/casual overlap extends into very relaxed home/errand contexts.
 
-## 9. Next experiment
+## 10. Next experiment
 
-The workwear style profile is now stable enough to stop broad discovery galleries temporarily.
+Broad workwear and casual galleries have now produced diminishing returns. Do not continue generic discovery.
 
 Recommended next sequence:
-1. move to **casual/weekend style** so workwear findings are not generalized across life contexts;
-2. later test **conference/speaking** and **dinner/event** variants;
+1. create initial style evaluation scenarios from the accepted evidence;
+2. test **conference/speaking** and **dinner/event** variants, where formality pressure is higher;
 3. defer shopping decisions about bags, shoes or accessories until the wardrobe inventory shows what Sil already owns;
-4. after contextual style discovery, create initial outfit rules and evaluation scenarios.
+4. after those high-formality contexts, treat `SIL_STYLE_PROFILE_V0` as sufficient for the first Wardrowbe pilot and learn further preferences from real outfit feedback.
 
 Avoid wide-leg trousers, high-waisted trousers, straight-leg trousers, skirts and dresses unless deliberately used as negative controls.
