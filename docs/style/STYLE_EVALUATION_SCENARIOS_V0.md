@@ -15,8 +15,9 @@ For each proposed outfit, evaluate at least:
 5. **Does it accidentally read as too serious, too classic, too plain or too dressed-up?**
 6. **Is unfamiliarity caused by true dislike or only by low combination confidence?**
 7. **Are omitted accessories genuinely unnecessary, or were they simply forgotten?**
+8. **Is the chosen degree of formality appropriate, or is the system merely reproducing Sil's current low-effort default?**
 
-A novel combination must not be rejected merely because Sil would not have invented it herself.
+A novel combination must not be rejected merely because Sil would not have invented it herself. Likewise, an outfit that resembles current habits must not automatically be treated as optimal for the context.
 
 ---
 
@@ -39,6 +40,8 @@ A novel combination must not be rejected merely because Sil would not have inven
 - rigid corporate suit language;
 - sneaker chosen automatically merely to make the outfit “relaxed”;
 - wide-leg, straight-leg or high-waisted trousers proposed as trend correction.
+
+**Open calibration question:** the work/casual overlap is descriptive evidence, not yet proof that the current ordinary-work baseline is optimally formal. During the wardrobe pilot, compare Sil's habitual work outfits with slightly more polished alternatives and learn from real preference and context appropriateness.
 
 ---
 
@@ -129,38 +132,55 @@ A novel combination must not be rejected merely because Sil would not have inven
 
 ## S07 — Work-to-dinner transition
 
-**Status:** partially specified; requires further discovery.
+**Status:** V0 direction validated; real-wardrobe calibration still required.
 
 **Context:** work followed by dinner or a somewhat more polished evening plan.
 
-**Known constraints:**
+**Known constraints and evidence:**
 - dresses and skirts remain excluded;
 - heeled ankle boots and heeled shoes are viable;
-- user does not want to feel excessively dressed-up.
+- Sil does not want to feel excessively dressed-up;
+- all three tested dinner/event references were acceptable, including stronger colour, statement blazer/jacket and heels.
 
-**What this scenario must eventually test:**
-- how much polish can be added while preserving the relaxed identity;
-- whether changing shoes/accessories/layer is enough rather than changing the whole outfit.
+**V0 interpretation:** Sil tolerates a meaningful increase in evening polish without needing to switch to a different aesthetic identity. Colour and statement layers remain compatible at the higher-formality end.
+
+**Pilot test:** determine from real garments whether the preferred transition is usually achieved by changing shoes/layer/accessories or by changing more of the outfit.
 
 ---
 
 ## S08 — Conference / speaking / visible professional event
 
-**Status:** requires further discovery.
+**Status:** V0 direction validated; real-wardrobe calibration still required.
 
 **Context:** presenting, facilitating, conference, professional event with higher visibility.
 
-**Known starting point:**
-- professional, colourful and current;
+**Known evidence:**
+- professional, colourful and current remains the target;
 - trousers preferred;
-- relaxed tailoring likely compatible;
-- avoid sombre, overly classic or ceremonial styling.
+- all three tested higher-visibility references were acceptable: full colour tailoring, colour + print, and the more relaxed jeans/blazer end;
+- therefore neither a full coloured suit nor a relaxed polished formula is intrinsically outside Sil's style.
 
-**What this scenario must eventually test:**
-- acceptable increase in structure and formality;
-- preferred footwear;
-- whether stronger colour or a distinctive jacket helps rather than distracts;
-- accessory intensity.
+**V0 interpretation:** the acceptable range is broader than first assumed. The key decision is not “formal or informal?” but **what degree of polish fits this specific event while still feeling like Sil**.
+
+**Pilot test:** use event context (audience, venue, role, visibility, travel, dinner afterwards) to choose the appropriate point on the formality dial.
+
+---
+
+## S09 — Formality calibration / current-habit challenge
+
+**Status:** required during real-wardrobe pilot.
+
+**Context:** any work scenario where a habitual outfit and a slightly more polished alternative are both plausible.
+
+**Purpose:** distinguish a genuine style preference for cross-context dressing from a current habit driven by convenience, low combination confidence or low decision effort.
+
+**Test method:**
+1. propose one outfit close to Sil's current habitual baseline;
+2. propose one alternative using the same core aesthetic but one step higher in polish;
+3. keep both practical and recognisably Sil;
+4. collect preference and, when actually worn, post-wear feedback.
+
+**Do not pre-judge the answer.** The objective is to learn whether Sil wants more polish on ordinary workdays, not to “correct” her toward conventional office formality.
 
 ---
 
@@ -188,4 +208,5 @@ Moirai passes this first style-authority layer when it can consistently:
 - introduce combinations Sil would not invent herself without drifting outside her preferences;
 - respect hard exclusions;
 - surface forgotten-but-welcome finishing elements selectively;
+- distinguish preference from habit/convenience when calibrating formality;
 - explain why an outfit works in one or two useful sentences rather than fashion jargon.
